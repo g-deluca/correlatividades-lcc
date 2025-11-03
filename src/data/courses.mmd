@@ -1,0 +1,30 @@
+---
+config:
+  layout: dagre
+---
+flowchart LR
+    R-111["R-111: Álgebra y Geometría Analítica I"] --> R-121["R-121: Álgebra y Geometría Analítica II"]
+    R-112["R-112: Análisis Matemático I"] --> R-122["R-122: Análisis Matemático II"]
+    R-113["R-113: Programación I"] --> R-123["R-123: Programación II"]
+    R-121 --> R-211["R-211: Álgebra Lineal"]
+    R-123 --> R-212["R-212: Estructura de Datos y Algoritmos I"] & R-213["R-213: Lenguajes Formales y Computabilidad"] & R-223["R-223: Lógica"]
+    R-211 --> R-221["R-221: Complementos de Matemática I"] & R-224["R-224: Métodos Numéricos"] & R-423["R-423: Complementos de Matemática II"]
+    R-212 --> R-221 & R-222["R-222: Arquitectura del Computador"] & R-312["R-312: Estructuras de Datos y Algoritmos II"]
+    R-122 --> R-224 & R-311["R-311: Probabilidad y Estadística"] & R-423
+    R-221 --> R-312
+    R-223 --> R-313["R-313: Análisis de Lenguajes de Programación"] & R-322["R-322: Sistemas Operativos I"] & R-324["R-324: Teoría de Bases de Datos"] & R-411["R-411: Ingeniería de Software I"] & R-413["R-413: Introducción a la Inteligencia Artificial"] & R-423
+    R-311 --> R-321["R-321: Modelos Físicos"]
+    R-312 --> R-322 & R-324 & R-411 & R-413 & R-422["R-422: Compiladores"]
+    R-313 --> R-322 & R-422
+    R-222 --> R-323["R-323: Comunicaciones"] & R-412["R-412: Sistemas Operativos II"]
+    R-314["R-314: Examen de Suficiencia de Inglés"] --> R-411 & R-412 & R-413 & R-422 & R-423
+    R-322 --> R-412
+    R-324 --> R-413
+    R-411 --> R-421["R-421: Ingeniería del Software II"] & R-511["R-511: Seguridad Informática"]
+    R-213 --> R-422
+    R-512["R-512: Optativa I"]
+    R-513["R-513: Práctica Profesional"]
+    R-514["R-514: Taller de Tesina"]
+    R-521["R-521: Optativa II"]
+    R-522["R-522: Optativa III"]
+    R-523["R-523: Tesina"]
