@@ -71,9 +71,9 @@ export default function FlowChart({ initialNodes, initialEdges }: FlowChartProps
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        textAlign: 'center',
-        wordWrap: 'break-word',
-        whiteSpace: 'normal',
+        textAlign: 'center' as const,
+        wordWrap: 'break-word' as const,
+        whiteSpace: 'normal' as const,
       },
     }));
   }, [nodes, hoveredNodeId, highlighted.nodeIds]);

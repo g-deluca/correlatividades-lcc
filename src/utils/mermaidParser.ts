@@ -113,7 +113,7 @@ export function parseMermaidDiagram(mermaidText: string): {
   });
 
   // Add nodes to dagre graph
-  nodeMap.forEach((label, id) => {
+  nodeMap.forEach((_label, id) => {
     dagreGraph.setNode(id, {
       width: 250,  // Estimated node width
       height: 80   // Estimated node height
