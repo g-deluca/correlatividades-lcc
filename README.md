@@ -2,6 +2,8 @@
 
 An interactive web application that visualizes course prerequisite relationships from a Mermaid diagram. When hovering over a course node, the app highlights all prerequisite paths showing which courses must be completed beforehand.
 
+Live demo: https://g-deluca.github.io/correlatividades-lcc/
+
 ## Features
 
 - **Interactive Graph Visualization**: Built with ReactFlow for smooth pan, zoom, and interaction
